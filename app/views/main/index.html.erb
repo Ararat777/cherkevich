@@ -3,8 +3,21 @@
 
   
     <div class="fotorama">
-      <%= image_tag '/assets/1.png',class: 'fotorama-img'%>
-      <%= image_tag '/assets/2.png',class: 'fotorama-img'%>
-      <%= image_tag '/assets/3.png',class: 'fotorama-img'%>
+      <div data-img="/assets/1.png">
+        <div class="caption">
+         <div class="row">
+           <div class="col-md-5 col-md-offset-1 text-center">
+             <h1>Коррекция бровей</h1>
+             <p class="pull-left">
+               <a href="#", class="btn btn-default">Подробнее <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+             </p>
+           </div>
+         </div>
+          
+        </div>
+      </div>
+      <div data-img="/assets/2.png">Two</div>
+      <div data-img="/assets/3.png">Three</div>
+      
     </div>
 </div>
