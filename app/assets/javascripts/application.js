@@ -19,8 +19,12 @@
 $(document).ready(function(){
  $('.fotorama').fotorama({
    loop: true,
-   nav: false,
-   width: '100%'
+   width: '100%',
+   transition: 'crossfade',
+   arrows: false,
+   autoplay: '4000',
+   stopautoplayontouch: false,
+   transitionduration: '1000'
    
   
  })
