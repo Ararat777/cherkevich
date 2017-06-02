@@ -20,15 +20,16 @@ $(document).ready(function(){
  $('.fotorama').fotorama({
    loop: true,
    width: '100%',
-   transition: 'crossfade',
+   transition: 'dissolve',
    arrows: false,
    autoplay: '4000',
    stopautoplayontouch: false,
-   transitionduration: '1000'
+   transitionduration: '1000',
+   click: false
    
   
  })
- var navbarHeight = parseInt($('.navbar-default').css("height"));
+ var navbarHeight = $('.navbar-default').height();
  
  var scrollNav = function(){
    var windowTop = $(window).scrollTop();

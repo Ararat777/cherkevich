@@ -76,6 +76,7 @@ body{
   }
 }
 #sliderwrap{
+  position: relative;
   margin-top: 180px;
   .caption{
     margin-top: 12%;
@@ -121,4 +122,33 @@ body{
   }
   
 }
-
+#sliderwrap:after{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    height: 20px;
+    bottom: 0;
+    right: 20px;
+    left: 20px;
+    border-radius: 10%;
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.4);
+}
+#aboutwrap{
+  margin-top: 110px;
+}
+#serviceswrap{
+  background-color: whitesmoke;
+  background-image: url("/assets/white-tiles.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  position: relative;
+  
+  margin-top: 80px;
+  
+  img{
+    border-radius: 40%;
+  }
+  h1{
+    line-height: 150px;
+  }
+}
