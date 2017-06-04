@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+    
+
+Service.delete_all
+Service.create!(:title =>'Брови и ресницы',:image => '/assets/Брови-и-ресницы.png')
+Service.create!(:title =>'Уход лица',:image => '/assets/Уход-лица.png')
+Service.create!(:title =>'Биоревитализация и мезотерапия',:image => '/assets/биоревитализация.png')
+Service.create!(:title =>'Контурная пластика',:image => '/assets/Контурная-пластика.png')
+
+

@@ -144,11 +144,24 @@ body{
   position: relative;
   
   margin-top: 80px;
-  
+  .btn{
+    background-color: rgba(0,0,0,0);
+    color: black;
+    border-color: black;
+    border-width: 1px;
+    transition: all 0.2s;
+    &:hover{
+      background-color: black;
+      color: white;
+    }
+  }
   img{
-    border-radius: 40%;
+    border-radius: 50%;
   }
   h1{
     line-height: 150px;
+  }
+  h3{
+    min-height: 52px;
   }
 }
