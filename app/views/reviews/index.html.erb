@@ -1,0 +1,14 @@
+<h1>Отзывы</h1>
+<% @reviews.each do |item|%>
+<h3><%= item.reviewer_name%></h3>
+<p><%= item.body %></p>
+<hr>
+<%end%>
+
+
+<br>
+<%= simple_form_for @review,url: reviews_path do |f|%>
+<%= f.input :reviewer_name,label: 'Ваше Имя' %>
+<%= f.input :body,as: :text,label: 'Ваш Отзыв',placeholder: 'Опишите процедуру и т.д...' %>
+<%= f.submit 'Оставить отзыв',class: 'btn btn-default' %>
+<%end%>

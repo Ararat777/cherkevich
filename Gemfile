@@ -31,6 +31,8 @@ gem 'simple_form'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-sass'
 gem "fotoramajs"
+gem 'meta-tags'
+gem 'friendly_id', '~> 5.1.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

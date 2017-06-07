@@ -44,15 +44,17 @@
       </div>
     </div>
     <div class="row text-center">
-      <% @services.each_with_index do |item,i| %>
+      <% @procedures.each_with_index do |item,i| %>
       <div class="col-md-3 ">
         <%= image_tag item.image,class: 'img-responsive' %>
         <h3><%= item.title %></h3>
         <p>
-        <%= link_to 'Перейти','#',class: 'btn btn-default btn-lg' %>
+        <%= link_to 'Перейти',procedure_path(item.slug),class: 'btn btn-default btn-lg' %>
         </p>
       </div>
       <% end %>
     </div>
   </div>
+</div>
+
 </div>

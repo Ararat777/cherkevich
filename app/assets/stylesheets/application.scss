@@ -75,9 +75,12 @@ body{
     padding: 0;
   }
 }
+#content{
+  margin-top: 141px;
+}
 #sliderwrap{
   position: relative;
-  margin-top: 141px;
+  
   .caption{
     margin-top: 12%;
     h1{
@@ -144,6 +147,7 @@ body{
   position: relative;
   
   margin-top: 80px;
+  padding-bottom: 40px;
   .btn{
     background-color: rgba(0,0,0,0);
     color: black;
@@ -164,4 +168,9 @@ body{
   h3{
     min-height: 52px;
   }
+}
+#footer{
+  margin-top: 80px;
+  position: relative;
+  clear: both;
 }

@@ -7,10 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
     
 
-Service.delete_all
-Service.create!(:title =>'Брови и ресницы',:image => '/assets/Брови-и-ресницы.png')
-Service.create!(:title =>'Уход лица',:image => '/assets/Уход-лица.png')
-Service.create!(:title =>'Биоревитализация и мезотерапия',:image => '/assets/биоревитализация.png')
-Service.create!(:title =>'Контурная пластика',:image => '/assets/Контурная-пластика.png')
+Procedure.delete_all
+Procedure.create!(:title =>'Брови и ресницы',:image => '/assets/Брови-и-ресницы.png',:slug =>'brovi_i_resnicy' )
+Procedure.create!(:title =>'Уход лица',:image => '/assets/Уход-лица.png',:slug =>'uhod_lica' )
+Procedure.create!(:title =>'Биоревитализация и мезотерапия',:image => '/assets/биоревитализация.png',:slug => 'biorevitalizaciya_i_mezoterapia' )
+Procedure.create!(:title =>'Контурная пластика',:image => '/assets/Контурная-пластика.png',:slug => 'konturnaya_plastika')
 
 
