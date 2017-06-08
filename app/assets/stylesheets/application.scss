@@ -170,7 +170,14 @@ body{
   }
 }
 #footer{
-  margin-top: 80px;
+  
   position: relative;
   clear: both;
+  background-color: lightskyblue;
+  .contacts{
+    margin-top: 70px;
+  }
+  .map{
+    padding-top: 7px;
+  }
 }
