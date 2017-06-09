@@ -139,6 +139,9 @@ body{
 }
 #aboutwrap{
   margin-top: 110px;
+  h1{
+    margin-top: 0;
+  }
 }
 #serviceswrap{
   background-color: whitesmoke;
@@ -172,8 +175,9 @@ body{
 #footer{
   
   position: relative;
+  color: white;
   clear: both;
-  background-color: lightskyblue;
+  background-color: black;
   .contacts{
     margin-top: 70px;
   }
