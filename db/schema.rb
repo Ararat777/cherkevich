@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 20170609171528) do
   end
 
   create_table "services", force: :cascade do |t|
+    t.string   "image"
     t.string   "title"
     t.text     "description"
     t.string   "price"

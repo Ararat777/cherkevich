@@ -11,27 +11,27 @@ Procedure.delete_all
 brovi = Procedure.create!(:title =>'Брови и ресницы',:image => '/assets/Брови-и-ресницы.png',:slug =>'brovi_i_resnicy',:meta_title => 'Уход за бровями и ресницами в Харькове|Красивая форма и крепкий волос',:meta_description => 'Правильные брови и ресницы в Харькове. Я занимаюсь моделированием, коррекцией, покраской, ламинированием, биозавивкой.' )
 
 
-Service.create!(:title => 'Коррекция бровей',:description => 'Удаление «лишних» волосков по Вашей природной форме бровей или ранее моделированной форму. ',:price => 'Женская – 70грн, Мужская - 100грн', :procedure_id => brovi.id)
+Service.create!(:title => 'Коррекция бровей',:description => 'Удаление «лишних» волосков по Вашей природной форме бровей или ранее моделированной форму. ',:price => 'Женская – 70грн, Мужская - 100грн', :procedure_id => brovi.id,:image => '/assets/korekciya_borwei.png')
 
-Service.create!(:title => 'Покраска бровей',:description => 'Окрашивание бровей, подбор цвета согласно цветотипа внешности с учетом Ваших пожеланий.',:price => 'Краской - от 60грн, Хной - 80грн.', :procedure_id => brovi.id)
+Service.create!(:title => 'Покраска бровей',:description => 'Окрашивание бровей, подбор цвета согласно цветотипа внешности с учетом Ваших пожеланий.',:price => 'Краской - от 60грн, Хной - 80грн.', :procedure_id => brovi.id,:image => '/assets/pokraska_browei.png')
 
-Service.create!(:title => 'Моделирование бровей',:description => 'Индивидуальный подбор красителя с учётом цветотипа внешности, придание формы бровям по типу лица с учётом индивидуальности',:price => 'от 140грн', :procedure_id => brovi.id)
+Service.create!(:title => 'Моделирование бровей',:description => 'Индивидуальный подбор красителя с учётом цветотипа внешности, придание формы бровям по типу лица с учётом индивидуальности',:price => 'от 140грн', :procedure_id => brovi.id,:image => '/assets/modelirovanie_brovei.png')
 
-Service.create!(:title => 'Скрабирование бровей',:description => 'Удаление мёртвых клеток кожи. Улучшение микроциркуляции крови, что способствует более качественному моделированию и быстрому росту бровей.',:price => 'от 50грн', :procedure_id => brovi.id)
+Service.create!(:title => 'Скрабирование бровей',:description => 'Удаление мёртвых клеток кожи. Улучшение микроциркуляции крови, что способствует более качественному моделированию и быстрому росту бровей.',:price => 'от 50грн', :procedure_id => brovi.id,:image => '/assets/skrabirovanie_browei.png')
 
-Service.create!(:title => 'Биовыпрямление бровей',:description => 'Выравнивание кудрявых, "непослушных" волосков на бровях.',:price => '150грн', :procedure_id => brovi.id)
+Service.create!(:title => 'Биовыпрямление бровей',:description => 'Выравнивание кудрявых, "непослушных" волосков на бровях.',:price => '150грн', :procedure_id => brovi.id,:image => '/assets/biovupryamlenie_browei.png')
 
-Service.create!(:title => 'Ламинирование бровей',:description => 'Укрепление волосков, придает здоровый ухоженный вид, блеск.',:price => '250грн', :procedure_id => brovi.id)
+Service.create!(:title => 'Ламинирование бровей',:description => 'Укрепление волосков, придает здоровый ухоженный вид, блеск.',:price => '250грн', :procedure_id => brovi.id,:image => '/assets/laminirovanie_browei.png')
 
-Service.create!(:title => 'Ботокс бровей',:description => 'Укрепление волосков, придает здоровый ухоженый вид, блеск. Стимулирует рост бровей.',:price => '350грн', :procedure_id => brovi.id)
+Service.create!(:title => 'Ботокс бровей',:description => 'Укрепление волосков, придает здоровый ухоженый вид, блеск. Стимулирует рост бровей.',:price => '350грн', :procedure_id => brovi.id,:image => '/assets/botox_browei.png')
 
-Service.create!(:title => 'Покраска ресниц',:description => 'Окрашивание ресниц, гипоаллергенными красителями, что визуально делает ресницы длинными и пышными.',:price => 'от 60грн', :procedure_id => brovi.id)
+Service.create!(:title => 'Покраска ресниц',:description => 'Окрашивание ресниц, гипоаллергенными красителями, что визуально делает ресницы длинными и пышными.',:price => 'от 60грн', :procedure_id => brovi.id,:image => '/assets/pokraska_resnic.png')
 
-Service.create!(:title => 'Биозавивка ресниц',:description => 'Подкручивание ресниц от роста, благодаря завитку ресницы визуально становятся длиннее на 30-35%.',:price => '220грн', :procedure_id => brovi.id)
+Service.create!(:title => 'Биозавивка ресниц',:description => 'Подкручивание ресниц от роста, благодаря завитку ресницы визуально становятся длиннее на 30-35%.',:price => '220грн', :procedure_id => brovi.id,:image => '/assets/biozavivka_resnic.png')
 
-Service.create!(:title => 'Ламинирование ресниц и Кератирование ресниц',:description => 'Улучшение структуры, увеличение объема, укрепление ресниц. Результат - более густые, темные ресницы с красивым изгибом.',:price => '300грн', :procedure_id => brovi.id)
+Service.create!(:title => 'Ламинирование ресниц и Кератирование ресниц',:description => 'Улучшение структуры, увеличение объема, укрепление ресниц. Результат - более густые, темные ресницы с красивым изгибом.',:price => '300грн', :procedure_id => brovi.id,:image => '/assets/laminirovanie_resnic.png')
 
-Service.create!(:title => 'Ботокс ресниц',:description => 'Улучшение структуры, увеличение объема, укрепление ресниц, в Lash Botox добавляется восстанавливающее  средство, которое активирует рост ресниц. Результат - более густые, темные ресницы с красивым изгибом.',:price => '350 грн', :procedure_id => brovi.id)
+Service.create!(:title => 'Ботокс ресниц',:description => 'Улучшение структуры, увеличение объема, укрепление ресниц, в Lash Botox добавляется восстанавливающее  средство, которое активирует рост ресниц. Результат - более густые, темные ресницы с красивым изгибом.',:price => '350 грн', :procedure_id => brovi.id,:image => '/assets/botox_resnic.png')
 
 uhod = Procedure.create!(:title =>'Уход лица',:image => '/assets/Уход-лица.png',:slug =>'uhod_lica',:meta_title => 'Кожа лица будет в порядке. Запишись на чистку, пилинг, маску или массаж|Харьков',:meta_description => 'Предоставляю широкий спектр услуг: ультразвуковая чистка лица, химический пилинг, макси, массаж улитками по хорошей цене в Харькове.' )
 
