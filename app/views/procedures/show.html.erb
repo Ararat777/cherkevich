@@ -1,1 +1,37 @@
-<h1><%= @procedure.title %></h1>
+<div id="servicepage">
+ <div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h1 class="text-center"><%= @procedure.title %></h1>
+      <p><%= @procedure.description %></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="row">
+        <% @procedure.services.each do |item| %>
+        <div class="col-md-4">
+         <div class="service">
+          <span class="title">
+            <%= item.title %>
+          </span>
+          <span class="price">
+            <%= item.price %>
+          </span>
+          <p>
+            <%= item.description %>
+          </p>
+           
+         </div>
+          
+        </div>
+        <%end%>
+  
+      </div>
+    </div>
+  </div>
+</div>
+  
+</div>
+ 
+
