@@ -44,4 +44,15 @@ $(document).ready(function(){
  $(window).scroll(function(){
    scrollNav();
  })
+ 
+ $('.service').on("mouseenter",function(){
+   var height = '-' + $(this).children(".description").css("height");
+   $(this).children(".service-info").css("top",height);
+   $(this).children(".description").css("top",height);
+   $(this).children(".description").stop().fadeIn(400);
+ }).on("mouseleave",function(){
+   $(this).children(".description").stop().fadeOut(400);
+   $(this).children(".service-info").css("top", '0');
+   $(this).children(".description").css("top", '0');
+ });
 });

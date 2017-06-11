@@ -189,11 +189,16 @@ body{
 #servicepage{
   .service{
     
-    min-height: 450px;
+    
     margin-bottom: 20px;
-   
+    max-height: 286.66px;
     text-align: center;
     box-shadow: 0 0 3px black;
+    overflow: hidden;
+    .service-info{
+      position: relative;
+      transition: top 0.4s;
+    }
     .image{
       
     }
@@ -203,16 +208,18 @@ body{
     .title{
       font-size: 16px;
       font-weight: 600;
-      min-height: 39px;
+      min-height: 44px;
       display: block;
     }
     .price{
       display: block;
       min-height: 36px;
     }
-    p{
-      font-size: 12px;
-      margin-top: 5px;
+    .description{
+      position: relative;
+      display: none;
+      padding: 10px;
+      transition: top 0.4s;
     }
     
   }

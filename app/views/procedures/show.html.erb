@@ -7,27 +7,32 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-md-10 col-md-offset-1">
       <div class="row">
         <% @procedure.services.each do |item| %>
         <div class="col-md-4">
          <div class="service">
-          <div class="image">
-            <%= image_tag item.image,class: 'img-responsive' %>
-          </div>
-          <div class="info">
-           <span class="title">
-            <%= item.title %>
-          </span>
-          <span class="price">
-            <%= item.price %>
-          </span>
-          <p>
-            <%= item.description %>
-          </p>
-            
-          </div>
+           <div class="service-info">
+             <div class="image">
+                <%= image_tag item.image,class: 'img-responsive' %>
+             </div>
+            <div class="info">
+              <span class="title">
+                  <%= item.title %>
+              </span>
+              <span class="price">
+                <%= item.price %>
+              </span>
+
+            </div>
+           </div>
           
+           <div class="description">
+             <p>
+            <%= item.description %>
+             </p>
+           </div>
+           
            
          </div>
           
