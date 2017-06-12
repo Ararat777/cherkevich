@@ -52,9 +52,9 @@ $(document).ready(function(){
    var description_top = '-' + (block_height / 2) +'px'
    $(this).children(".service-info").css("top",image_height);
    $(this).children(".description").css("top",description_top);
-   $(this).children(".description").stop().fadeIn(400);
+   $(this).children(".description").stop().delay(200).fadeIn(400);
  }).on("mouseleave",function(){
-   $(this).children(".description").stop().fadeOut(400);
+   $(this).children(".description").stop().stop().fadeOut(200);
    $(this).children(".service-info").css("top", '0');
    
  });
