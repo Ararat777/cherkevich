@@ -46,13 +46,16 @@ $(document).ready(function(){
  })
  
  $('.service').on("mouseenter",function(){
-   var height = '-' + $(this).children(".description").css("height");
-   $(this).children(".service-info").css("top",height);
-   $(this).children(".description").css("top",height);
+   var image_height = '-' + $(this).find(".image").css("height");
+   
+   var block_height = parseInt($(this).css("height"));
+   var description_top = '-' + (block_height / 2) +'px'
+   $(this).children(".service-info").css("top",image_height);
+   $(this).children(".description").css("top",description_top);
    $(this).children(".description").stop().fadeIn(400);
  }).on("mouseleave",function(){
    $(this).children(".description").stop().fadeOut(400);
    $(this).children(".service-info").css("top", '0');
-   $(this).children(".description").css("top", '0');
+   
  });
 });
