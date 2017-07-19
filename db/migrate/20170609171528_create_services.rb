@@ -5,6 +5,7 @@ class CreateServices < ActiveRecord::Migration[5.0]
       t.string :title
       t.text :description
       t.string :price
+      t.string :time
       t.belongs_to :procedure,index: true
       t.timestamps
     end

@@ -1,5 +1,6 @@
 class ReviewsController < ApplicationController
   def index
+    @procedures = Procedure.all
     @reviews = Review.all
     @review = Review.new
   end
@@ -11,6 +12,6 @@ class ReviewsController < ApplicationController
   
   private
   def review_params
-    params.require(:review).permit(:reviewer_name,:body)
+    params.require(:review).permit(:reviewer_name,:body,:procedure_id)
   end
 end

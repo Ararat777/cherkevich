@@ -1,0 +1,16 @@
+<div class="modal_box">
+  <div class="modal_content">
+    <div class="form-title">
+      <span></span>
+    </div>
+    <%= simple_form_for :customer,url: customers_path do |f| %>
+            <%= f.input :service,as: :hidden %>
+            <%= f.input :name,label: 'Ваше Имя' %>
+            <%= f.input :email,label: 'Ваша почта' %>
+            <%= f.input :phone,as: :tel,label: 'Ваш номер мобильного' %>
+            <%= f.input :comment,as: :text,label: 'Комментарий' %>
+            <%= f.input :time,as: :datetime,label: 'Выберите желаемую дату' %>
+            <%= f.submit 'Записаться',class: 'btn btn-default' %>
+        <%end%>
+  </div>
+</div>

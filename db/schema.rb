@@ -52,8 +52,10 @@ ActiveRecord::Schema.define(version: 20170609171528) do
   create_table "reviews", force: :cascade do |t|
     t.string   "reviewer_name"
     t.string   "body"
+    t.integer  "procedure_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.index ["procedure_id"], name: "index_reviews_on_procedure_id", using: :btree
   end
 
   create_table "services", force: :cascade do |t|
@@ -61,6 +63,7 @@ ActiveRecord::Schema.define(version: 20170609171528) do
     t.string   "title"
     t.text     "description"
     t.string   "price"
+    t.string   "time"
     t.integer  "procedure_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false

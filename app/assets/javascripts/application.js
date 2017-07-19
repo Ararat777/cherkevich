@@ -49,13 +49,29 @@ $(document).ready(function(){
    var image_height = '-' + $(this).find(".image").css("height");
    
    var block_height = parseInt($(this).css("height"));
-   var description_top = '-' + (block_height / 2) +'px'
    $(this).children(".service-info").css("top",image_height);
-   $(this).children(".description").css("top",description_top);
    $(this).children(".description").stop().delay(200).fadeIn(400);
  }).on("mouseleave",function(){
    $(this).children(".description").stop().stop().fadeOut(200);
    $(this).children(".service-info").css("top", '0');
    
  });
+  
+  
+  $('.modal-btn').on("click",function(){
+    $('.modal_box').fadeIn();
+  })
+  $(window).on("click",function(event){
+    if(event.target.className == 'modal_box'){
+      $('.modal_box').fadeOut();
+    }
+  })
+  
+  
+  $('.modal-btn').on("click", function(){
+    var title = $(this).data('service');
+    $('.modal_content').find('.form-title').find('span').text(title);
+    $('.modal_content').find('.simple_form').find('#customer_service').val(title);
+  });
+  
 });
